@@ -1,3 +1,11 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 .header {
   background-color: #000066;
   color: white;
@@ -10,6 +18,24 @@ main {
   color: black;
   text-align: center;
 }
+
+.bankList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+  /* flex-flow: row wrap; */
+}
+
+.bankList > article{
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 300px;
+}
+
 
 .footer {
   background-color: #242424;
